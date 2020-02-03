@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Ваш персональный гороскоп на деньги</title>
+    <style>
+        header {
+            position: relative;
+            background-color: black;
+            height: 75vh;
+            min-height: 25rem;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        header video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: 0;
+            -ms-transform: translateX(-50%) translateY(-50%);
+            -moz-transform: translateX(-50%) translateY(-50%);
+            -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+        }
+
+        header .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        header .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: black;
+            opacity: 0.5;
+            z-index: 1;
+        }
+
+        @media (pointer: coarse) and (hover: none) {
+            header {
+                background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+            }
+
+            header video {
+                display: none;
+            }
+        }
+
+        #sticky-footer {
+            flex-shrink: none;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="overlay"></div>
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <source src="bg.mp4" type="video/mp4">
+    </video>
+    <div class="container h-100">
+        <div class="d-flex h-100 text-center align-items-center">
+            <div class="w-100 text-white">
+                <h1 class="display-3">Гороскоп на деньги</h1>
+                <p class="lead mb-0">Когда и насколько вы станете богаты?</p>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="my-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 mx-auto">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-4">ОВЕН</h1>
+                        <p class="lead">Действуя осторожно и хладнокровно, можно добиться больших успехов. Поступки,
+                            совершенные под влиянием эмоций, не принесут ничего хорошего. Если вы оказались в сложной
+                            ситуации — постарайтесь спокойно обдумать ее, посоветуйтесь с теми, кому доверяете; не все
+                            преграды могут быть преодолены немедленно, более того — некоторые из них и вовсе не нужно
+                            преодолевать.</p>
+                        <p class="lead">Необходима разборчивость в контактах. Вы склонны доверять первому впечатлению, а
+                            оно далеко не всегда является верным. Возможны финансовые потери, неудачные покупки; из-за
+                            чрезмерной расточительности некоторые Овны к концу дня останутся на мели.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 mx-auto">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-4">ТЕЛЕЦ</h1>
+                        <p>Благоприятный день для самостоятельной работы, любых занятий, для которых вам не нужна
+                            компания. Наедине с собой вы чувствуете себя вполне комфортно, а вот вынужденное общение с
+                            людьми, которые не слишком вам симпатичны или не разделяют вашей точки зрения, кажется
+                            чрезвычайно утомительным и раздражает гораздо больше, чем в другие дни.</p>
+                        <p>Вероятно получение известий, которые заставят беспокоиться, могут надолго испортить
+                            настроение. Однако у вас есть шанс изменить ситуацию к лучшему; правда, для этого придется
+                            начать действовать немедленно.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 mx-auto">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-4">БЛИЗНЕЦЫ</h1>
+                        <p>В этот день вы успеете многое, если будете действовать так, как подсказывает интуиция.
+                            Окружающие будут уговаривать вас изменить планы, отказаться от намеченных дел — настаивайте
+                            на своем, и вы непременно добьетесь успеха. Возможны подарки, в том числе очень ценные,
+                            приятные сюрпризы.</p>
+                        <p>Появляются новые идеи, их много, и не всегда сразу удается понять, какие из них удачны, а
+                            какие — нет. Будьте практичны, не витайте в облаках: сегодня лучше действовать, чем мечтать.
+                            Легко найти общий язык с людьми, которые значительно старше вас, а вот поладить с
+                            ровесниками не всегда удается.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="jumbotron bg-success text-white">
+            <h1 class="display-4">Хотите персональный прогноз?</h1>
+            <p class="lead">Профессиональные астрологи готовы сделать индивидуальный прогноз по вашим данным.</p>
+            <hr class="my-4">
+            <p>Подпишитесь на нашу рассылку:</p>
+            <form method="get" action="thanks.html">
+                <div class="col-12 col-sm-4">
+                    <input type="email" class="form-control" name="email" placeholder="Ваша почта"/>
+                </div>
+                <div class="col-12 col-sm-4 mt-1">
+                    <a class="btn btn-primary" href="#" role="button">подписаться</a>
+                </div>
+            </form>
+        </div>
+        <div class="row">
+            <div class="col-12 mx-auto">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-4">РАК</h1>
+                        <p>День связан с проблемами в общении, многие представители знака создают трудности себе и
+                            окружающим. Раки-руководители не могут найти общего языка с подчиненными, рядовые сотрудники
+                            бунтуют против сложившихся традиций, пытаются привлечь внимание к своим достоинствам, но при
+                            этом не выполняют в полной мере своих обязанностей. Возможны финансовые потери, неудачные
+                            сделки.</p>
+                        <p>С близкими вы ладите лучше, чем с деловым окружением, отношения в семье ровны и гармоничны.
+                            Дома находятся интересные занятия, скучать вам не придется.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 mx-auto">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-4">ЛЕВ</h1>
+                        <p>День сложится удачно, если вы серьезно подойдете к выбору цели и составлению планов,
+                            легкомыслие недопустимо даже в мелочах. Будьте готовы к тому, что для получения нужного
+                            результата придется потрудиться, обратиться за помощью к человеку, который не слишком вам
+                            симпатичен. Люди, некогда оказавшие вам услуги, сегодня потребуют платы за них.</p>
+                        <p>Возможны легкие недомогания, есть опасность простудных заболеваний, но серьезной угрозы для
+                            здоровья нет. Вечер подходит для дружеских встреч, а вот романтические свидания, назначенные
+                            на это время, едва ли оправдают ожидания.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 mx-auto">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-4">ДЕВА</h1>
+                        <p>Хочется стабильности, предсказуемости и ясности, но ни на что из перечисленного рассчитывать
+                            не приходится. Желающим заработать придется ловить рыбку в мутной воде, и невод вы закинете
+                            не раз, прежде чем улов вас устроит. Обостряется конкурентная борьба, ваши соперники готовы
+                            воспользоваться нечестными методами.</p>
+                        <p>Отношения с близкими налаживаются, давние конфликты и разногласия забыты. Если не удастся
+                            прийти к единому мнению по каким-то вопросам, найдется решение, которое устраивает всех.
+                            Возможно получение важных и очень приятных известий от дальних родственников.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="jumbotron bg-success text-white">
+            <h1 class="display-4">Хотите персональный прогноз?</h1>
+            <p class="lead">Профессиональные астрологи готовы сделать индивидуальный прогноз по вашим данным.</p>
+            <hr class="my-4">
+            <p>Подпишитесь на нашу рассылку:</p>
+            <form method="get" action="thanks.html">
+                <div class="col-12 col-sm-4">
+                    <input type="email" class="form-control" name="email" placeholder="Ваша почта"/>
+                </div>
+                <div class="col-12 col-sm-4 mt-1">
+                    <a class="btn btn-primary" href="#" role="button">подписаться</a>
+                </div>
+            </form>
+        </div>
+        <div class="row">
+            <div class="col-12 mx-auto">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-4">ДЕВА</h1>
+                        <p>В этот день не стоит принимать важных решений, особенно если они касаются отношений с другими
+                            людьми: вам трудно правильно оценить окружающих, разобраться в мотивах их поступков.
+                            Рекомендуется ограничить общение; из-за ваших необдуманных замечаний даже невинная светская
+                            беседа может закончиться ссорой.</p>
+                        <p>Вероятны неожиданные визиты, незваные гости могут задержаться надолго. Во второй половине дня
+                            можно делать покупки, однако не стоит слишком увлекаться: вам трудно будет сказать себе
+                            «стоп» и отказаться от ненужных приобретений.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 mx-auto">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-4">ВЕСЫ</h1>
+                        <p>В этот день не стоит принимать важных решений, особенно если они касаются отношений с другими
+                            людьми: вам трудно правильно оценить окружающих, разобраться в мотивах их поступков.
+                            Рекомендуется ограничить общение; из-за ваших необдуманных замечаний даже невинная светская
+                            беседа может закончиться ссорой.</p>
+                        <p>Вероятны неожиданные визиты, незваные гости могут задержаться надолго. Во второй половине дня
+                            можно делать покупки, однако не стоит слишком увлекаться: вам трудно будет сказать себе
+                            «стоп» и отказаться от ненужных приобретений.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 mx-auto">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-4">СКОРПИОН</h1>
+                        <p>Посвятите этот день действительно важным делам — шансы преуспеть в них высоки. Возможно
+                            урегулирование профессиональных разногласий, многие Скорпионы после череды конфликтов и
+                            споров достигают наконец компромисса с руководством и коллегами. Благоприятный день для
+                            начала сотрудничества с новыми партнерами: оно будет плодотворным и выгодным для обоих.</p>
+                        <p>В сфере личных отношений преобладает влияние позитивных тенденций, и то, как развиваются
+                            события, вас очень радует. Не бойтесь проявить инициативу — это в любом случае пойдет на
+                            пользу.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="jumbotron bg-success text-white">
+            <h1 class="display-4">Хотите персональный прогноз?</h1>
+            <p class="lead">Профессиональные астрологи готовы сделать индивидуальный прогноз по вашим данным.</p>
+            <hr class="my-4">
+            <p>Подпишитесь на нашу рассылку:</p>
+            <form method="get" action="thanks.html">
+                <div class="col-12 col-sm-4">
+                    <input type="email" class="form-control" name="email" placeholder="Ваша почта"/>
+                </div>
+                <div class="col-12 col-sm-4 mt-1">
+                    <a class="btn btn-primary" href="#" role="button">подписаться</a>
+                </div>
+            </form>
+        </div>
+        <div class="row">
+            <div class="col-12 mx-auto">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-4">СТРЕЛЕЦ</h1>
+                        <p>Очень остра интуиция, повышена эмоциональная восприимчивость, поэтому вы хорошо понимаете
+                            людей, с которыми имеете дело, легко находите общий язык даже с теми, кого никто не
+                            понимает. Этот подходящий день для того, чтобы сделать приятный сюрприз любимому человеку
+                            или сделать шаг навстречу тому, кто вам интересен.</p>
+                        <p>Появляются новые планы на будущее, не исключено и получение важной информации, которая
+                            заставит вас изменить отношение к событиям последних дней. Занятия спортом идут на пользу,
+                            лишь посещение бассейна нежелательно.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 mx-auto">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-4">КОЗЕРОГ</h1>
+                        <p>Нет такой задачи, решения которой вы бы не нашли. Интеллектуальный потенциал очень высок, к
+                            тому же вы в любых обстоятельствах сохраняете хладнокровие; все это помогает вам достичь
+                            больших успехов. Новые партнеры смотрят на вас с подозрением, и вам нелегко будет завоевать
+                            их доверие. Но и это удастся — просто ведите себя естественно.</p>
+                        <p>Хорошо принимать гостей, устраивать какие-то развлекательные мероприятия дома. Гости не
+                            останутся равнодушными к вашим кулинарным достижениям. Вечером возможно неожиданное
+                            романтическое свидание, приглашение на свидание.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 mx-auto">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-4">ВОДОЛЕЙ</h1>
+                        <p>Избежать споров будет нелегко, но вы сможете сохранить хорошие отношения с окружающими, если
+                            приложите усилия. Могут напомнить о себе давние недоброжелатели, сегодня их главным оружием
+                            станут слухи и сплетни; придется доказывать, что ваша репутация по-прежнему безупречна.</p>
+                        <p>Возможны финансовые трудности, неудачные покупки, ошибки в расчетах. Нежелательно общаться с
+                            людьми, с которыми вы связаны деловыми интересами, обсуждать вопросы, касающиеся работы. В
+                            конце дня возможно легкое недомогание.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 mx-auto">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-4">РЫБЫ</h1>
+                        <p>Смело беритесь за новые дела: с ними вы справитесь быстро, причем не важно, будет вам кто-то
+                            помогать или нет. Благоприятный день для начала учебы, самообразования; Рыбы используют
+                            чужой опыт, заимствуют и развивают чужие идеи. С финансовой точки зрения день очень удачен,
+                            денежные поступления могут оказаться даже значительнее, чем вы ожидали.</p>
+                        <p>Несколько хуже обстоят дела в сфере личных отношений: с близкими нелегко найти общий язык,
+                            слишком часто звучат претензии и обидные замечания в ваш адрес. Вечером возможны легкие
+                            недомогания.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="jumbotron bg-success text-white">
+            <h1 class="display-4">Хотите персональный прогноз?</h1>
+            <p class="lead">Профессиональные астрологи готовы сделать индивидуальный прогноз по вашим данным.</p>
+            <hr class="my-4">
+            <p>Подпишитесь на нашу рассылку:</p>
+            <form method="get" action="thanks.html">
+                <div class="col-12 col-sm-4">
+                    <input type="email" class="form-control" name="email" placeholder="Ваша почта"/>
+                </div>
+                <div class="col-12 col-sm-4 mt-1">
+                    <a class="btn btn-primary" href="#" role="button">подписаться</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    </div>
+</section>
+<footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+    <div class="container text-center">
+        <small>Copyright &copy; Money Horoscope</small>
+    </div>
+</footer>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+<script>
+    $(function () {
+        $('p').each(function () {
+            $(this).addClass('lead');
+        })
+    })
+</script>
+</body>
+</html>
